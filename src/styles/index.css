@@ -1,0 +1,92 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-SemiBold.eot");
+  src: url("../fonts/Poppins-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins-SemiBold.woff") format("woff"), url("../fonts/Poppins-SemiBold.ttf") format("truetype"), url("../fonts/Poppins-SemiBold.svg#Poppins") format("svg");
+  font-weight: 600;
+  font-style: normal; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif; }
+
+.App {
+  display: flex;
+  padding-top: 80px;
+  width: 1440px;
+  max-height: 740px;
+  margin: 0 auto; }
+  .App .wrapper {
+    height: 659px;
+    display: flex;
+    width: 100%;
+    background-image: linear-gradient(156deg, #0158ca, #094d9b); }
+  .App .part {
+    position: relative;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
+    .App .part .wrap {
+      width: 486px;
+      margin-right: 78px;
+      font-family: Poppins;
+      font-weight: 600;
+      font-size: 20px;
+      color: #fff;
+      line-height: 1.5;
+      letter-spacing: 1.1px; }
+      .App .part .wrap p {
+        margin-bottom: 40px; }
+  .App .image-container {
+    position: absolute;
+    bottom: 58px;
+    right: 0;
+    width: 740px;
+    height: 687px;
+    overflow-x: hidden; }
+    .App .image-container img {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 107%;
+      height: 107%;
+      object-fit: contain; }
+
+.App-title {
+  font-family: Poppins;
+  font-size: 32px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 15px; }
+
+.discountLink {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 282px;
+  height: 58px;
+  padding: 0 24px;
+  border-radius: 2px;
+  background-color: #85c242;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.2);
+  color: #fff;
+  text-decoration: none; }
+
+.timer-wrapper {
+  display: flex;
+  margin-bottom: 60px; }
+
+.timeRect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 96px;
+  height: 96px;
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.1);
+  font-size: 32px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-right: 20px;
+  border-bottom: 2px solid #fff; }
