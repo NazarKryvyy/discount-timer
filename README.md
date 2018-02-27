@@ -11,3 +11,5 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.
 By default, it also includes a service worker so that your app loads from local cache on future visits.
+
+To restart timer type in console localStorage.removeItem('endTime') , it will delet endTime from localStorage, then reload web-page.
