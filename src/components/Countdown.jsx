@@ -6,7 +6,7 @@ export class Countdown extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			timeLeft: checkEndTime(),
+			timeLeft: this.props.timeLeft
 		};
 	}
 	componentDidMount() {
@@ -16,8 +16,16 @@ export class Countdown extends Component {
 	componentWillUnmount() {
 		clearInterval(this.timerID);
 	}
+	setTimeleft() {
+		if (this.state.timeLeft === null) {
+			this.setState({
+				timeLeft: checkEndTime()
+			});
+		}
+	}
 
 	startCountDown() {
+		this.setTimeleft();
 		this.timerID = setInterval(() => {
 			this.tick();
 		}, 1000);
@@ -27,7 +35,7 @@ export class Countdown extends Component {
 		const newtimeLeft = this.state.timeLeft - 1;
 		if (newtimeLeft >= 0) {
 			this.setState({
-				timeLeft: newtimeLeft,
+				timeLeft: newtimeLeft
 			});
 			this.props.toggleDiscount(true);
 		} else {
@@ -42,3 +50,7 @@ export class Countdown extends Component {
 		return <Timer timer={formateTime(time)} />;
 	}
 }
+
+Countdown.defaultProps = {
+	timeLeft: null
+};
