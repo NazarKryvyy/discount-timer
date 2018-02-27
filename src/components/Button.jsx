@@ -1,5 +1,6 @@
 import React from 'react';
 import arrow from '../images/arrow.svg';
+import PropTypes from 'prop-types';
 
 export function Button(props) {
 	const button = props.discount ? (
@@ -11,3 +12,7 @@ export function Button(props) {
 	);
 	return <div>{button}</div>;
 }
+
+Button.protoTypes = {
+	discount: PropTypes.bool
+};

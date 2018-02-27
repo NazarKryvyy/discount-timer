@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { formateTime, checkEndTime } from '../helpers/Timer.js';
 import { Timer } from './Timer';
+import PropTypes from 'prop-types';
 
 export class Countdown extends Component {
 	constructor(props) {
@@ -53,4 +54,8 @@ export class Countdown extends Component {
 
 Countdown.defaultProps = {
 	timeLeft: null
+};
+
+Countdown.protoTypes = {
+	timeLeft: PropTypes.number
 };

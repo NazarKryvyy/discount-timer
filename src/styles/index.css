@@ -71,7 +71,10 @@ body {
   background-color: #85c242;
   box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.2);
   color: #fff;
-  text-decoration: none; }
+  text-decoration: none;
+  transition: 0.3s; }
+  .discountLink:hover {
+    background-color: #a2da65; }
 
 .timer-wrapper {
   display: flex;
